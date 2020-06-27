@@ -1,0 +1,13 @@
+// SASS Переменные
+@import "./utils/variables";
+// Глобальные стили
+@import "./components/body";
+
+/* Шапка сайта */
+@import "./components/page-header";
+
+/* CSS для вкладки Портфолио (portfolio.html) */
+@import "./components/portfolio";
+
+/* Футер */
+@import "./components/footer";
