@@ -1,0 +1,201 @@
+.footer {
+  min-width: 1200px;
+  background-color: $footer-bg-color;
+}
+.footer-container {
+  display: flex;
+}
+.footer-left-block {
+  display: inline-block;
+  width: 210px;
+  margin: 0;
+  margin-top: 48px;
+  margin-right: 69px;
+  margin-bottom: 28px;
+}
+.footer-logo {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.footer-studio {
+  color: $button-text-color;
+}
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $address-text-color;
+}
+.footer-contacts-address {
+  display: inline-block;
+  margin-bottom: 9px;
+  width: 231px;
+  height: 21px;
+  color: $other-text-color;
+}
+.footer-mail {
+  display: inline-block;
+  margin-bottom: 9px;
+  color: $address-text-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-mail:hover,
+.footer-mail:focus {
+  color: $accent-color;
+}
+.footer-telephone {
+  color: $address-text-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-telephone:hover,
+.footer-telephone:focus {
+  color: $accent-color;
+}
+.footer-social-media {
+  display: inline-block;
+  width: 270px;
+  margin: 0;
+  margin-top: 56px;
+  margin-right: 94px;
+  margin-bottom: 56px;
+}
+.footer-social-media-act,
+.footer-form-act {
+  display: inline-block;
+  margin-bottom: 21px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 0.88;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $other-text-color;
+}
+.footer-social-media-list-link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-social-media-list-link:hover,
+.footer-social-media-list-link:focus {
+  background-color: $accent-color;
+}
+
+.footer-social-media-list .instagram {
+  background-image: url("../images/instagram.svg");
+}
+.footer-social-media-list .twitter {
+  background-image: url("../images/twitter.svg");
+}
+.footer-social-media-list .facebook {
+  background-image: url("../images/facebook.svg");
+}
+.footer-social-media-list .linkedin {
+  background-image: url("../images/linkedin.svg");
+  margin-right: 0;
+}
+
+.footer-form {
+  /* outline: 2px solid red; */
+  display: inline-block;
+  margin: 0;
+  margin-top: 56px;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+.footer-form-input {
+  display: flex;
+}
+.footer-form-subscribe {
+  /* outline: 1px solid white; */
+  display: flex;
+  position: relative;
+}
+.footer-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: #2f303a;
+  color: $primary-text-color;
+}
+.footer-label {
+  /* outline: 1px solid red; */
+  display: flex;
+  position: absolute;
+  width: 334px;
+  height: 14px;
+  top: 18px;
+  left: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: $address-text-color;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-input:focus + .footer-label,
+.footer-input:not(:placeholder-shown) + .footer-label {
+  color: $accent-color;
+  top: 0;
+  left: 16px;
+  transform: translateY(-20px);
+}
+.button-secondary {
+  display: inline-flex;
+  padding: 10px 29px;
+  margin-left: 12px;
+
+  max-width: 200px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: $button-text-color;
+  background-color: $accent-color;
+}
+.button-secondary::after {
+  content: "";
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/icon-send.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
