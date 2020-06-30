@@ -1,0 +1,78 @@
+.customers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.customers-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 314px;
+  height: 33px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.78;
+  text-align: center;
+  color: $title-text-color;
+}
+.customers-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.customers-list > .item:nth-child(2n) {
+  margin-right: 0;
+}
+.customers-list > .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.customers-list .item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 210px;
+  height: 90px;
+}
+.customers-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: #afb1b8;
+
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customers-list-link:hover,
+.customers-list-link:focus {
+  border: 1px solid $accent-color;
+  fill: $accent-color;
+}
+.svg-yaco {
+  width: 44px;
+  height: 49px;
+}
+.svg-companytaglinehere {
+  width: 40px;
+  height: 52px;
+}
+.svg-company {
+  width: 41px;
+  height: 43px;
+}
+.svg-fosterpeters {
+  width: 80px;
+  height: 42px;
+}
+.svg-brand {
+  width: 59px;
+  height: 47px;
+}
+.svg-companytagline {
+  width: 88px;
+  height: 45px;
+}
