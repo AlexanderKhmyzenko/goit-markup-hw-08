@@ -1,4 +1,6 @@
 .footer {
+  margin-left: auto;
+  margin-right: auto;
   width: 480px;
   height: 603px;
   background-color: $footer-bg-color;
@@ -8,16 +10,26 @@
   padding-bottom: 60px;
 }
 .footer-left-block {
+  // outline: 1px solid green;
   display: block;
-  width: 210px;
   margin: 0;
-  margin-top: 48px;
-  margin-right: 69px;
-  margin-bottom: 28px;
+  margin-bottom: 60px;
 }
 .footer-logo {
   margin: 0;
-  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  width: 154px;
+  height: 28px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .footer-studio {
   color: $button-text-color;
@@ -31,55 +43,76 @@
   color: $address-text-color;
 }
 .footer-contacts-address {
-  margin-bottom: 9px;
-  width: 231px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+  width: 232px;
   height: 21px;
-  color: $other-text-color;
-}
-.footer-mail {
-  margin-bottom: 9px;
-  color: $address-text-color;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-mail:hover,
-.footer-mail:focus {
-  color: $accent-color;
-}
-.footer-telephone {
-  color: $address-text-color;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-telephone:hover,
-.footer-telephone:focus {
-  color: $accent-color;
-}
-.footer-social-media {
-  width: 270px;
-  margin: 0;
-  margin-top: 56px;
-  margin-right: 94px;
-  margin-bottom: 56px;
-}
-.footer-social-media-act,
-.footer-form-act {
-  display: inline-block;
-  margin-bottom: 21px;
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $other-text-color;
+}
+.footer-mail,
+.footer-telephone {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+  width: 232px;
+  height: 21px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $address-text-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.footer-social-media {
+  display: block;
+  // outline: 1px solid green;
+  margin: 0;
+  margin-bottom: 60px;
+}
+.footer-social-media-act {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 146px;
+  height: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
   font-size: 14px;
   line-height: 0.88;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: $other-text-color;
 }
+.footer-social-media-list {
+  display: flex;
+  padding-left: 122px;
+  padding-right: 122px;
+}
 .footer-social-media-list-link {
+  display: inline-block;
   width: 44px;
   height: 44px;
   margin-right: 10px;
@@ -92,12 +125,11 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
-.footer-social-media-list-link:hover,
-.footer-social-media-list-link:focus {
-  background-color: $accent-color;
-}
-
 .footer-social-media-list .instagram {
   background-image: url("../images/instagram.svg");
 }
@@ -114,17 +146,17 @@
 
 .footer-form {
   display: block;
-  outline: 2px solid red;
+  // outline: 2px solid red;
   margin: 0;
-  margin-top: 56px;
-  margin-left: auto;
-  margin-bottom: 50px;
   text-align: center;
 }
 .footer-form-act {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
   width: 219px;
   height: 16px;
-  margin-bottom: 20px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -132,6 +164,8 @@
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $other-text-color;
 }
 .footer-form-subscribe {
   //   outline: 1px solid white;
@@ -151,7 +185,7 @@
   color: $primary-text-color;
 }
 .footer-label {
-  /* outline: 1px solid red; */
+  // outline: 1px solid red;
   display: flex;
   position: absolute;
   width: 334px;
@@ -179,8 +213,6 @@
 .button-secondary {
   display: inline-flex;
   padding: 10px 29px;
-  margin-left: 12px;
-
   max-width: 200px;
   font-family: Roboto, sans-serif;
   font-style: normal;
