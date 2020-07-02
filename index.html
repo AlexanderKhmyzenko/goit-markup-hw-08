@@ -24,7 +24,7 @@
           <a href="./index.html" class="logo">
             Web <span class="logo-studio">Studio</span>
           </a>
-          <button class="button-open-nav">
+          <button class="button-open-nav" data-menu-open>
             <svg class="menu-nav-icon">
               <use
                 href="./images/sprite.svg#menu-icon"
@@ -34,7 +34,7 @@
             </svg>
           </button>
         </nav>
-        <div class="menu-nav">
+        <div class="menu-nav menu-nav-hidden" data-menu>
           <ul class="site-nav list">
             <li class="item">
               <a href="./index.html" class="link current studio">Студия</a>
@@ -70,6 +70,10 @@
               </a>
             </li>
           </ul>
+          <button class="button-close-nav" data-menu-close>
+            <svg class="menu-close-icon">
+              <use href="./images/sprite.svg#menu-close-icon" width="18.67px" height="18.67px"></use>
+            </svg>
         </div>
       </div>
     </header>
@@ -764,5 +768,6 @@
       })();
     </script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
