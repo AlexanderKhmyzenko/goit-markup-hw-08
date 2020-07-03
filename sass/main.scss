@@ -1,30 +1,30 @@
 // SASS Переменные
 @import "./utils/variables";
 //  Глобальные стили
-@import "./components/body";
+@import "./components/mobile/body";
 /* Шапка сайта */
-@import "./components/page-header";
+@import "./components/mobile/page-header";
 
 /* CSS для вкладки Студия (index.html)*/
 
 /* Герой */
-@import "./components/hero";
+@import "./components/mobile/hero";
 
 /* Модальное окно */
-@import "./components/backdrop";
-@import "./components/modal";
+@import "./components/mobile/backdrop";
+@import "./components/mobile/modal";
 
 /* Наши преимущества */
-@import "./components/advantages";
+@import "./components/mobile/advantages";
 
 /* Чем мы занимаемся */
-@import "./components/work";
+@import "./components/mobile/work";
 
 /* Наша команда */
-@import "./components/team";
+@import "./components/mobile/team";
 
 /* Постоянные клиенты */
-@import "./components/customers";
+@import "./components/mobile/customers";
 
 /* Футер */
-@import "./components/footer";
+@import "./components/mobile/footer";

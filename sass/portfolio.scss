@@ -1,13 +1,31 @@
+//                         MOBILE
+
 // SASS Переменные
 @import "./utils/variables";
 // Глобальные стили
-@import "./components/body";
+@import "./components/mobile/body";
 
 /* Шапка сайта */
-@import "./components/page-header";
+@import "./components/mobile/page-header";
 
 /* CSS для вкладки Портфолио (portfolio.html) */
-@import "./components/portfolio";
+@import "./components/mobile/portfolio";
 
 /* Футер */
-@import "./components/footer";
+@import "./components/mobile/footer";
+
+//                         DESKTOP
+
+// // SASS Переменные
+// @import "./utils/variables";
+// // Глобальные стили
+// @import "./components/desktop/body";
+
+// /* Шапка сайта */
+// @import "./components/desktop/page-header";
+
+// /* CSS для вкладки Портфолио (portfolio.html) */
+// @import "./components/desktop/portfolio";
+
+// /* Футер */
+// @import "./components/desktop/footer";

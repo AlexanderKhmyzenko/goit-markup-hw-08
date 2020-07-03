@@ -72,15 +72,16 @@ html {
 }
 
 .page-header {
+  position: relative;
   background-color: #ffffff;
   width: 480px;
   height: 60px;
   margin-left: auto;
   margin-right: auto;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav {
-  position: relative;
   height: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -258,6 +259,24 @@ html {
   color: #2196f3;
 }
 
+.site-nav .studio {
+  width: 66px;
+  height: 21px;
+  margin-bottom: 40px;
+}
+
+.site-nav .portfolio {
+  width: 99px;
+  height: 21px;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.site-nav .contact {
+  width: 87px;
+  height: 21px;
+}
+
 .site-nav .current {
   position: relative;
   color: #2196f3;
@@ -274,22 +293,6 @@ html {
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
-}
-
-.site-nav .studio {
-  width: 66px;
-  height: 21px;
-}
-
-.site-nav .portfolio {
-  width: 99px;
-  height: 21px;
-  margin-bottom: 40px;
-}
-
-.site-nav .contact {
-  width: 87px;
-  height: 21px;
 }
 
 .communication {
@@ -359,7 +362,6 @@ html {
 
 /* CSS для вкладки Портфолио (portfolio.html) */
 .portfolio {
-  outline: 1px solid red;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
@@ -387,9 +389,8 @@ html {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   width: 450px;
-  outline: 2px solid tomato;
 }
 
 .portfolio-list .item-button + .item-button {
@@ -440,7 +441,6 @@ html {
   margin-bottom: 30px;
   width: 450px;
   height: 404px;
-  outline: 1px solid teal;
 }
 
 .portfolio-projectslist-item:last-child {
@@ -468,12 +468,14 @@ html {
 
 .portfolio-projectslist-card {
   overflow: hidden;
+}
+
+.portfolio-projectslist-item:hover .portfolio-projectslist-card {
   position: relative;
 }
 
 .portfolio-projectslist-card::before {
   content: "";
-  position: absolute;
   top: 100%;
   width: 100%;
   height: 100%;
@@ -489,6 +491,7 @@ html {
 
 .portfolio-projectslist-item:hover .portfolio-projectslist-card::before,
 .portfolio-projectslist-item:focus .portfolio-projectslist-card::before {
+  position: absolute;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -496,12 +499,9 @@ html {
 
 .portfolio-projectlist-text {
   position: absolute;
-  top: 100%;
-  left: 24px;
-  opacity: 0;
-  width: 322px;
-  height: 168px;
   margin: 0;
+  opacity: 0;
+  pointer-events: none;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -521,6 +521,11 @@ html {
 
 .portfolio-projectslist-item:hover .portfolio-projectlist-text,
 .portfolio-projectslist-item:focus .portfolio-projectlist-text {
+  position: absolute;
+  top: 105%;
+  left: 24px;
+  width: 402px;
+  height: 140px;
   opacity: 1;
   -webkit-transform: translateY(-231px);
           transform: translateY(-231px);
@@ -530,7 +535,7 @@ html {
   background-color: #ffffff;
   padding-left: 24px;
   padding-right: 24px;
-  width: 368px;
+  width: 448px;
 }
 
 .portfolio-projectlist-title {

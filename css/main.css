@@ -72,15 +72,16 @@ html {
 }
 
 .page-header {
+  position: relative;
   background-color: #ffffff;
   width: 480px;
   height: 60px;
   margin-left: auto;
   margin-right: auto;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav {
-  position: relative;
   height: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -258,6 +259,24 @@ html {
   color: #2196f3;
 }
 
+.site-nav .studio {
+  width: 66px;
+  height: 21px;
+  margin-bottom: 40px;
+}
+
+.site-nav .portfolio {
+  width: 99px;
+  height: 21px;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.site-nav .contact {
+  width: 87px;
+  height: 21px;
+}
+
 .site-nav .current {
   position: relative;
   color: #2196f3;
@@ -274,22 +293,6 @@ html {
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
-}
-
-.site-nav .studio {
-  width: 66px;
-  height: 21px;
-}
-
-.site-nav .portfolio {
-  width: 99px;
-  height: 21px;
-  margin-bottom: 40px;
-}
-
-.site-nav .contact {
-  width: 87px;
-  height: 21px;
 }
 
 .communication {
