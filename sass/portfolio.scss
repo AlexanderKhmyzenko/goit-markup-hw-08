@@ -1,31 +1,44 @@
-//                         MOBILE
-
 // SASS Переменные
 @import "./utils/variables";
-// Глобальные стили
-@import "./components/mobile/body";
 
-/* Шапка сайта */
-@import "./components/mobile/page-header";
+//                  MOBILE
 
-/* CSS для вкладки Портфолио (portfolio.html) */
-@import "./components/mobile/portfolio";
-
-/* Футер */
-@import "./components/mobile/footer";
-
-//                         DESKTOP
-
-// // SASS Переменные
-// @import "./utils/variables";
 // // Глобальные стили
-// @import "./components/desktop/body";
-
+// @import "./components/mobile/body";
 // /* Шапка сайта */
-// @import "./components/desktop/page-header";
+// @import "./components/mobile/page-header";
 
 // /* CSS для вкладки Портфолио (portfolio.html) */
-// @import "./components/desktop/portfolio";
+
+// @import "./components/mobile/portfolio";
 
 // /* Футер */
-// @import "./components/desktop/footer";
+// @import "./components/mobile/footer";
+
+//                  TABLET
+
+// // Глобальные стили
+// @import "./components/tablet/body";
+// /* Шапка сайта */
+// @import "./components/tablet/page-header";
+
+// /* CSS для вкладки Портфолио (portfolio.html) */
+
+// @import "./components/tablet/portfolio";
+
+// /* Футер */
+// @import "./components/tablet/footer";
+
+//                   DESKTOP
+
+// Глобальные стили
+@import "./components/desktop/body";
+/* Шапка сайта */
+@import "./components/desktop/page-header";
+
+/* CSS для вкладки Портфолио (portfolio.html) */
+
+@import "./components/desktop/portfolio";
+
+/* Футер */
+@import "./components/desktop/footer";

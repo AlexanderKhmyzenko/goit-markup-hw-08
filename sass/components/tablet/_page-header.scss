@@ -2,18 +2,25 @@
   background-color: $header-bg-color;
   border-bottom: 1px solid $portfolio-header-border-color;
 }
-.main-nav,
-.container-nav {
+.main-nav {
+  // outline: 1px solid blue;
   display: flex;
+  justify-content: start;
   align-items: center;
 }
+.container-nav {
+  outline: 1px solid blue;
+  display: block;
+  align-items: center;
+  width: 141.1px;
+  margin-right: 81px;
+}
 .logo {
-  margin-right: 85px;
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: $accent-color;
   &-studio {
@@ -33,9 +40,10 @@
 }
 .site-nav {
   // outline: 1px solid yellow;
-  margin-right: 296px;
+  margin-right: 84px;
 }
 .site-nav .item {
+  // outline: 1px solid black;
   margin-right: 50px;
   &:last-child {
     margin-right: 0;
@@ -77,19 +85,18 @@
   }
 }
 .communication {
-  /* outline: 1px solid green; */
+  // outline: 1px solid green;
   display: flex;
-  margin-left: auto;
-  align-items: center;
+  flex-direction: column;
 }
 .communication .item {
-  align-items: center;
-  & + .item {
-    margin-left: 30px;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 .communication .link {
-  /* outline: 1px solid red; */
+  // outline: 1px solid red;
   display: flex;
   align-items: center;
   font-family: Roboto, sans-serif;
@@ -111,12 +118,12 @@
 .communication .mail {
   width: 21px;
   height: 16px;
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
 }
 .communication .telephone {
   width: 15px;
   height: 20px;
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
 }

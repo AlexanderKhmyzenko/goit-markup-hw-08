@@ -1,40 +1,37 @@
 .footer {
+  max-width: 768px;
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
-  height: 603px;
   background-color: $footer-bg-color;
 }
 .footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  // outline: 1px solid tomato;
 }
 .footer-left-block {
-  // outline: 1px solid green;
-  display: block;
+  display: inline-block;
+  width: 210px;
   margin: 0;
+  margin-left: 76px;
+  margin-top: 60px;
+  margin-right: 147px;
   margin-bottom: 60px;
+  text-align: center;
+  // outline: 1px solid tomato;
 }
 .footer-logo {
+  display: inline-block;
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 20px;
-
-  width: 154px;
-  height: 28px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 .footer-studio {
   color: $button-text-color;
 }
 .footer-contacts {
+  display: flex;
+  flex-direction: column;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -43,73 +40,57 @@
   color: $address-text-color;
 }
 .footer-contacts-address {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
   margin-bottom: 8px;
-  width: 232px;
+  width: 210px;
   height: 21px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: $other-text-color;
 }
-.footer-mail,
-.footer-telephone {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.footer-mail {
+  display: inline-block;
   margin-bottom: 8px;
-  width: 232px;
-  height: 21px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: $address-text-color;
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
+}
+.footer-mail:hover,
+.footer-mail:focus {
+  color: $accent-color;
+}
+.footer-telephone {
+  color: $address-text-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-telephone:hover,
+.footer-telephone:focus {
+  color: $accent-color;
 }
 .footer-social-media {
-  display: block;
-  // outline: 1px solid green;
+  display: inline-block;
+  width: 216px;
   margin: 0;
+  margin-top: 65px;
+  margin-right: 89px;
   margin-bottom: 60px;
+  text-align: center;
 }
-.footer-social-media-act {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.footer-social-media-act,
+.footer-form-act {
+  display: inline-block;
   margin-bottom: 20px;
-  width: 146px;
-  height: 16px;
   font-family: Roboto;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 14px;
   line-height: 0.88;
   letter-spacing: 0.03em;
-  text-align: center;
   text-transform: uppercase;
   color: $other-text-color;
-}
-.footer-social-media-list {
-  display: flex;
-  padding-left: 122px;
-  padding-right: 122px;
 }
 .footer-social-media-list-link {
   display: inline-block;
@@ -125,11 +106,12 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-  }
 }
+.footer-social-media-list-link:hover,
+.footer-social-media-list-link:focus {
+  background-color: $accent-color;
+}
+
 .footer-social-media-list .instagram {
   background-image: url("../images/instagram.svg");
 }
@@ -145,10 +127,12 @@
 }
 
 .footer-form {
-  display: block;
   // outline: 2px solid red;
+  display: block;
   margin: 0;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
 }
 .footer-form-act {
   display: block;
@@ -168,9 +152,10 @@
   color: $other-text-color;
 }
 .footer-form-subscribe {
-  //   outline: 1px solid white;
+  /* outline: 1px solid white; */
   display: block;
   position: relative;
+  text-align: center;
 }
 .footer-input {
   display: block;
@@ -186,7 +171,7 @@
   color: $primary-text-color;
 }
 .footer-label {
-  // outline: 1px solid red;
+  /* outline: 1px solid red; */
   display: flex;
   position: absolute;
   width: 334px;

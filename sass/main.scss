@@ -1,30 +1,80 @@
 // SASS Переменные
 @import "./utils/variables";
+
+//                  MOBILE
+
+// //  Глобальные стили
+// @import "./components/mobile/body";
+// /* Шапка сайта */
+// @import "./components/mobile/page-header";
+
+// /* CSS для вкладки Студия (index.html)*/
+
+// /* Герой */
+// @import "./components/mobile/hero";
+// /* Модальное окно */
+// @import "./components/mobile/backdrop";
+// @import "./components/mobile/modal";
+// /* Наши преимущества */
+// @import "./components/mobile/advantages";
+// /* Чем мы занимаемся */
+// @import "./components/mobile/work";
+// /* Наша команда */
+// @import "./components/mobile/team";
+// /* Постоянные клиенты */
+// @import "./components/mobile/customers";
+
+// /* Футер */
+// @import "./components/mobile/footer";
+
+//                  TABLET
+
+// //  Глобальные стили
+// @import "./components/tablet/body";
+// /* Шапка сайта */
+// @import "./components/tablet/page-header";
+
+// /* CSS для вкладки Студия (index.html)*/
+
+// /* Герой */
+// @import "./components/tablet/hero";
+// /* Модальное окно */
+// @import "./components/tablet/backdrop";
+// @import "./components/tablet/modal";
+// /* Наши преимущества */
+// @import "./components/tablet/advantages";
+// /* Чем мы занимаемся */
+// @import "./components/tablet/work";
+// /* Наша команда */
+// @import "./components/tablet/team";
+// /* Постоянные клиенты */
+// @import "./components/tablet/customers";
+
+// /* Футер */
+// @import "./components/tablet/footer";
+
+//                   DESKTOP
+
 //  Глобальные стили
-@import "./components/mobile/body";
+@import "./components/desktop/body";
 /* Шапка сайта */
-@import "./components/mobile/page-header";
+@import "./components/desktop/page-header";
 
 /* CSS для вкладки Студия (index.html)*/
 
 /* Герой */
-@import "./components/mobile/hero";
-
+@import "./components/desktop/hero";
 /* Модальное окно */
-@import "./components/mobile/backdrop";
-@import "./components/mobile/modal";
-
+@import "./components/desktop/backdrop";
+@import "./components/desktop/modal";
 /* Наши преимущества */
-@import "./components/mobile/advantages";
-
+@import "./components/desktop/advantages";
 /* Чем мы занимаемся */
-@import "./components/mobile/work";
-
+@import "./components/desktop/work";
 /* Наша команда */
-@import "./components/mobile/team";
-
+@import "./components/desktop/team";
 /* Постоянные клиенты */
-@import "./components/mobile/customers";
+@import "./components/desktop/customers";
 
 /* Футер */
-@import "./components/mobile/footer";
+@import "./components/desktop/footer";
