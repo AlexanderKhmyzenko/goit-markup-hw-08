@@ -1,0 +1,138 @@
+.advantages {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.advantages-list {
+  display: block;
+  list-style: none;
+  padding: 0;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+.advantages-list .item {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+.advantages-list > .item:nth-child(2n) {
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
+}
+.advantages-list > .item:nth-child(n + 3) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+.advantages-list > .item:last-child {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
+}
+.advantages-list .item::before {
+  content: "";
+  display: block;
+  height: 120px;
+
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $section-bg-color;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+.advantages-list .details::before {
+  background-image: url("../images/antenna.svg");
+}
+.advantages-list .punctuality::before {
+  background-image: url("../images/vector.svg");
+}
+.advantages-list .planning::before {
+  background-image: url("../images/diagram.svg");
+}
+.advantages-list .technology::before {
+  background-image: url("../images/cosmonaut.svg");
+}
+.advantages-list-title {
+  width: 270px;
+  height: 16px;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-text-color;
+  @media screen and (min-width: 480px) {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.advantages-list-text {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 50px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 75px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
