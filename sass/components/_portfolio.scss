@@ -8,7 +8,11 @@
     width: 480px;
     background-color: $portfolio-bg-color;
   }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
   @media screen and (min-width: 1200px) {
+    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -48,6 +52,9 @@
 .portfolio-list .item-button:nth-child(4n) {
   @media screen and (min-width: 480px) {
     margin-left: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 8px;
   }
 }
 .portfolio-list-button {
@@ -97,7 +104,7 @@
     width: 354px;
   }
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 2 * 30px) / 3);
+    width: 370px;
   }
 }
 .portfolio-projectslist-item:last-child {
@@ -111,6 +118,9 @@
 .portfolio-projectslist-item:nth-child(2n) {
   @media screen and (min-width: 768px) {
     margin-right: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
   }
 }
 .portfolio-projectslist-item:nth-child(3n) {
@@ -132,6 +142,9 @@
   @media screen and (min-width: 768px) {
     width: 354px;
     height: 404px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
   }
   &:hover,
   &:focus {
@@ -169,38 +182,22 @@
   position: absolute;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(-100%);
-  @media screen and (min-width: 768px) {
-    position: static;
-  }
 }
 .portfolio-projectlist-text {
-  @media screen and (min-width: 480px) {
-    position: absolute;
-    margin: 0;
-    opacity: 0;
-    pointer-events: none;
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.03em;
-    color: $other-text-color;
-    transition-property: opacity, transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  @media screen and (min-width: 768px) {
-    top: 95%;
-    left: 24px;
-    width: 306px;
-    height: 196px;
-  }
-  @media screen and (min-width: 1200px) {
-    top: 100%;
-    width: 322px;
-    height: 168px;
-  }
+  position: absolute;
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: $other-text-color;
+  transition-property: opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-projectslist-item:hover .portfolio-projectlist-text,
 .portfolio-projectslist-item:focus .portfolio-projectlist-text {
@@ -212,6 +209,17 @@
     height: 140px;
     opacity: 1;
     transform: translateY(-231px);
+  }
+  @media screen and (min-width: 768px) {
+    top: 95%;
+    left: 24px;
+    width: 306px;
+    height: 196px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 100%;
+    width: 322px;
+    height: 168px;
   }
 }
 .portfolio-projectslist-frame {
@@ -242,11 +250,13 @@
 }
 .New-Orlean {
   @media screen and (min-width: 480px) {
-    font-size: 17.6px;
+    font-size: 18px;
   }
   @media screen and (min-width: 768px) {
-    width: 306px;
-    height: 36px;
+    font-size: 16.8px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 17.6px;
   }
 }
 .portfolio-projectlist-type {

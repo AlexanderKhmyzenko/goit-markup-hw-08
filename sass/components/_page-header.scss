@@ -15,7 +15,8 @@
     border-bottom: none;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: auto;
+    min-width: 1200px;
   }
 }
 .main-nav {
@@ -107,6 +108,7 @@
   // outline: 1px solid green;
   @media screen and (min-width: 480px) {
     position: absolute;
+    z-index: 1;
     top: 60px;
     left: 0;
     width: 480px;
