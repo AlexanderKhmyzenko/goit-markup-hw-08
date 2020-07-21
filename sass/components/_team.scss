@@ -86,8 +86,12 @@
     padding-bottom: 24px;
     background-color: $primary-bg-color;
   }
+  @media screen and (min-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
   @media screen and (min-width: 1200px) {
-    padding: 0;
+    height: 162px;
   }
 }
 .team-list-title {
@@ -101,9 +105,6 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $title-text-color;
-  @media screen and (min-width: 1200px) {
-    margin-top: 30px;
-  }
 }
 .team-list-text {
   margin: 0;
