@@ -1486,6 +1486,7 @@ img {
   .team-list > .item {
     margin-right: 30px;
     width: 354px;
+    height: 422px;
   }
 }
 
@@ -1517,6 +1518,18 @@ img {
 @media screen and (min-width: 1200px) {
   .team-list > .item:nth-child(4n) {
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .team-foto {
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-foto {
+    height: 260px;
   }
 }
 
