@@ -368,8 +368,9 @@ img {
   .site-nav .item {
     padding-top: 32px;
     padding-bottom: 32px;
-    height: 80px;
     margin-right: 50px;
+    margin-bottom: 0;
+    height: 80px;
   }
 }
 
@@ -378,6 +379,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -434,7 +436,6 @@ img {
   .site-nav .studio {
     width: 66px;
     height: 21px;
-    margin-bottom: 40px;
   }
 }
 
@@ -451,7 +452,6 @@ img {
     width: 99px;
     height: 21px;
     padding: 0;
-    margin-bottom: 40px;
   }
 }
 
@@ -465,6 +465,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .site-nav .contact {
+    margin-bottom: 0;
     width: 87px;
     height: 21px;
   }
